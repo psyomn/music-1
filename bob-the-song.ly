@@ -18,8 +18,10 @@ chorus = \relative fis {
   e, fis gis a b cis d e
 
   b, fis' gis a b a gis fis
-  d fis gis a b a gis fis
-  e fis gis a b cis d2 r1
+  d fis gis a b cis d cis
+  e, fis gis a b cis d cis
+  cis, fis gis a b cis d2
+
 }
 
 second = \relative fis {
