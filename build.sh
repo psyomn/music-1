@@ -1,0 +1,3 @@
+#! /bin/sh
+
+lilypond *.ly
