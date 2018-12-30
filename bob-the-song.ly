@@ -14,14 +14,14 @@ first = \relative fis {
 
 chorus = \relative fis {
   cis4 fis gis a b cis d e
-  d, fis gis a b cis d e
-  e, fis gis a b cis d e
-
+  d, fis gis a b cis d cis
+  e, fis gis a b a gis a
   b, fis' gis a b a gis fis
-  d fis gis a b cis d cis
-  e, fis gis a b cis d cis
-  cis, fis gis a b cis d2
 
+  cis fis gis a b cis d e
+  d, fis gis a b cis d cis
+  e, fis gis a b a gis a
+  b, fis' gis a b a gis fis1
 }
 
 second = \relative fis {
