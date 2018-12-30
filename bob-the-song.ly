@@ -2,14 +2,15 @@
 
 \header {
   title = "Bob The Song"
-  composer = "Kal'Rog"
+  composer = "Kal'org"
 }
 
 first = \relative fis {
   fis4 cis' e cis d cis b cis
   fis, cis' e cis a b gis a
-  fis cis' fis e d cis b cis
-  a b a gis fis1
+  fis4 cis' e cis d cis b cis
+  fis cis' fis e fis gis fis e fis
+  d cis b a b gis fis1
 }
 
 chorus = \relative fis {
@@ -25,16 +26,16 @@ chorus = \relative fis {
 }
 
 second = \relative fis {
-  fis4 cis' fis r1
-  fis,4 cis' e r1
-  fis,4 cis' d r1
-  fis,4 cis' b r1
+  fis4 cis' fis1
+  fis,4 cis' e1
+  fis,4 cis' d1
+  fis,4 cis' b1
 
   fis4 cis' fis2
   fis,4 cis' e2
   fis,4 cis' d2
-  fis,4 cis' b2
-  a4 b a gis fis1
+  fis,4 cis' fis e fis gis fis e fis
+  d cis b a b gis fis1
 }
 
 epilogue = \relative fis {
