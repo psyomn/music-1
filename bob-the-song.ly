@@ -8,8 +8,8 @@
 first = \relative fis {
   fis4 cis' e cis d cis b cis
   fis, cis' e cis a b gis a
-  fis4 cis' e cis d cis b cis
-  fis cis' fis e fis gis fis e fis
+  fis cis' e cis d cis b cis
+  fis, cis' fis e fis gis fis e fis
   d cis b a b gis fis1
 }
 
