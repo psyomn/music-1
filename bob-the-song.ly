@@ -34,12 +34,76 @@ second = \relative fis {
   fis4 cis' fis2
   fis,4 cis' e2
   fis,4 cis' d2
-  fis,4 cis' fis e fis gis fis e fis
-  d cis b a b gis fis1
+
+  fis,4 cis' fis e
+  fis gis fis e
+  fis d cis b
+  a b gis fis1
 }
 
 epilogue = \relative fis {
-  d'4 cis b a gis a fis1
+  d'4 cis b a gis
+  a fis2~ fis2
+}
+
+first_bass = \relative c {
+  \mark "Theme I"
+  fis,2.. fis8 |
+  fis2.. fis8 |
+  fis2.. fis8 |
+  fis2.. fis8 |
+
+  fis2.. fis8 |
+  fis2.. fis8 |
+  fis2.. fis8 |
+  fis2.. fis8 | \bar "||"
+}
+
+chorus_bass = \relative c, {
+  \mark "Chorus"
+  a'4 fis8 gis8 a4 b4 |
+  a4 fis8 gis8 a4 b4 |
+  a4 fis8 gis8 a4 b4 |
+  a4 fis8 gis8 a4 b4 |
+
+  a4 fis8 gis8 a8 b8 a4 |
+  a4 fis8 gis8 a8 b8 a4 |
+  a4 fis8 gis8 a8 b8 a4 |
+  a4 fis8 gis8 a8 b8 a4 |
+
+  a1 |
+  b1 |
+  cis1 |
+  d1~ |
+
+  d2 fis | \bar "||"
+}
+
+second_bass = \relative c {
+  \mark "Theme II"
+  fis1~ |
+  fis1 |
+  fis1~ |
+  fis1 |
+
+  fis1~ |
+  fis1 |
+  fis1~ |
+  fis1 |
+
+  fis1~ |
+  fis1 |
+  fis1~ |
+  fis1 |
+
+  fis1 | \bar "||"
+}
+
+epilogue_bass = \relative c {
+  \mark "Epilogue"
+  d'4 cis b a |
+  gis a fis2~ |
+  fis2 r2 | \bar "|."
 }
 
 full = {
@@ -72,6 +136,25 @@ full = {
       \key fis \minor
       r2
       \full
+    }
+
+    {
+      \new Staff \with {
+        instrumentName = #"Bass"
+        midiInstrument = #"electric bass (finger)"
+      }
+      \key fis \minor
+      \clef bass
+
+      %% If the bass sounds an octave higher in MIDI, uncomment this
+      %% I think something is wrong with my soundfonts
+      %% \transpose c c, {
+        \first_bass
+        \chorus_bass
+        \second_bass
+        \chorus_bass
+        \epilogue_bass
+      %% }
     }
   >>
 
