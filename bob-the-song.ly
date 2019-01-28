@@ -74,18 +74,18 @@ b_second = \relative c {
 
 g_third = \relative fis {
   \time 7/4
-  fis4 cis' fis r1 |
-  fis,4 cis' e r1 |
-  fis,4 cis' d r1 |
-  fis,4 cis' b r1 |
+  fis4 cis' fis~ fis1 |
+  fis,4 cis' e~ e1 |
+  fis,4 cis' d~ d1 |
+  fis,4 cis' b~ b1 |
 
   \time 4/4
-  fis4 cis' fis r |
-  fis,4 cis' e r |
-  fis,4 cis' d r |
-  fis,4 cis' b r |
+  fis4 cis' fis2 |
+  fis,4 cis' e2 |
+  fis,4 cis' d2 |
+  fis,4 cis' b2 |
 
-  fis4 cis' fis e | fis gis fis e | d cis b a | b gis fis r |
+  fis4 cis' fis e | fis gis fis e | d cis b a | b gis fis2 |
 }
 
 b_third = \relative c {
