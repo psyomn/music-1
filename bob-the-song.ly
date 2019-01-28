@@ -32,8 +32,8 @@ g_chorus = \relative fis {
   cis fis gis a | b cis d e |
   d, fis gis a | b cis d cis |
   e, fis gis a | b a gis a |
-  
-  b, fis' gis a | b4 a gis fis~ | fis1 | 
+
+  b, fis' gis a | b4 a gis fis~ | fis1 |
 }
 
 b_chorus = \relative c, {
@@ -51,8 +51,28 @@ b_chorus = \relative c, {
   e1 | b1 | b,1 | b4 a gis2 | fis1 |
 }
 
-
 g_second = \relative fis {
+  fis4 cis' fis gis | a8( gis) gis2. |
+  \time 7/4 f4 gis b ais gis2. |
+  \time 4/4
+  fis4 d e cis | d b2. |
+  g4 b e fis | g fis2. |
+
+  fis,4 cis' fis gis | a8( gis) gis2. |
+}
+
+b_second = \relative c {
+  fis1 | fis1 |
+  \time 7/4 fis1.~ fis4 |
+  \time 4/4
+  fis1 | fis1 |
+  fis1 | fis1 |
+
+  fis1 | fis1 |
+}
+
+
+g_third = \relative fis {
   \time 7/4
   fis4 cis' fis r1 |
   fis,4 cis' e r1 |
@@ -68,7 +88,7 @@ g_second = \relative fis {
   fis4 cis' fis e | fis gis fis e | d cis b a | b gis fis r |
 }
 
-b_second = \relative c {
+b_third = \relative c {
   \time 7/4
   fis1.~ fis4 | fis1.~ fis4 | fis1.~ fis4 | fis1.~ fis4 |
 
@@ -97,20 +117,13 @@ b_epilogue = \relative c {
 
       \key fis \minor
 
-      \mark "First"
-      \g_first
-
-      \mark "Chorus"
-      \g_chorus
-
-      \mark "Second"
-      \g_second
-
-      \mark "Chorus"
-      \g_chorus
-
-      \mark "Epilogue"
-      \g_epilogue
+      \mark "First" \g_first
+      \mark "Chorus" \g_chorus
+      \mark "Second" \g_second
+      \mark "Chorus" \g_chorus
+      \mark "Third" \g_third
+      \mark "Chorus" \g_chorus
+      \mark "Epilogue" \g_epilogue
     }
 
     {
@@ -127,6 +140,8 @@ b_epilogue = \relative c {
         \b_first
         \b_chorus
         \b_second
+        \b_chorus
+        \b_third
         \b_chorus
         \b_epilogue
       %% }
