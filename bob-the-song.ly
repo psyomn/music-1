@@ -2,7 +2,7 @@
 
 \header {
   title = "Bob The Song"
-  composer = "Kal'org"
+  composer = "Bob The Composer"
 }
 
 
@@ -58,7 +58,9 @@ g_second = \relative fis {
   fis4 d e cis | d b2. |
   g4 b e fis | g fis2. |
 
+  % \todo
   fis,4 cis' fis gis | a8( gis) gis2. |
+  d'4\glissando e d cis |
 }
 
 b_second = \relative c {
@@ -69,6 +71,7 @@ b_second = \relative c {
   fis1 | fis1 |
 
   fis1 | fis1 |
+  fis1 |
 }
 
 
