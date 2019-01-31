@@ -118,10 +118,14 @@ b_third = \relative c {
 
 
 g_epilogue = \relative fis {
+  b, fis' gis a | b a gis fis |
+  b, fis' gis a | b a gis fis |
   d'4 cis b a | b gis fis2~ | fis1 |
 }
 
 b_epilogue = \relative c {
+  a4 fis8 gis8 a4 b4 | a4 fis8 gis8 a4 b4 |
+  a4 fis8 gis8 a4 b4 | a4 fis8 gis8 a4 b4 |
   d'4 cis b a | gis a fis2~ | fis1 |
 }
 
