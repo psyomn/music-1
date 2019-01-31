@@ -53,25 +53,41 @@ b_chorus = \relative c, {
 
 g_second = \relative fis {
   fis4 cis' fis gis | a8( gis) gis2. |
-  \time 7/4 f4 gis b ais gis2. |
+  \time 7/4
+  f4 gis b ais gis2. |
   \time 4/4
   fis4 d e cis | d b2. |
   g4 b e fis | g fis2. |
 
-  % \todo
   fis,4 cis' fis gis | a8( gis) gis2. |
-  d'4\glissando e d cis |
+  fis2 e4 a, | b cis2. |
+  \time 7/4
+  g4 a b g fis2. | g4 a b g fis2. |
+
+  \time 4/4
+  fis4 cis' fis gis | a8( gis) gis2. |
+  d'4\glissando e2 d4~ | d4 cis2. |
+  e4\glissando fis4 e2 | fis4\glissando gis2 fis4 | e2 fis2~ | fis1 |
 }
 
+% good luck... :P
 b_second = \relative c {
   fis1 | fis1 |
-  \time 7/4 fis1.~ fis4 |
+  \time 7/4
+  fis1.~ fis4 |
   \time 4/4
   fis1 | fis1 |
   fis1 | fis1 |
 
   fis1 | fis1 |
-  fis1 |
+  fis1 | fis1 |
+  \time 7/4
+  fis1.~ fis4 | fis1.~ fis4 |
+
+  \time 4/4
+  fis1 | fis1 |
+  fis1 | fis1 |
+  fis1 | fis1 | fis1 | fis1 |
 }
 
 
