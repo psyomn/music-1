@@ -5,7 +5,6 @@
   composer = "Bob The Composer"
 }
 
-
 g_first = \relative fis {
   fis4 cis' e cis | d cis b cis |
   fis, cis' e cis | d cis a b |
@@ -15,11 +14,14 @@ g_first = \relative fis {
 }
 
 b_first = \relative c {
-  fis,2.. fis8 | fis2.. fis8 |
-  fis2.. fis8 | fis2.. fis8 |
-  fis2.. fis8 | fis2.. fis8 |
-  fis2.. fis8 | fis2.. fis8 |
-  fis2.. fis8 | fis2.. fis8 | fis2.. fis8 | fis1 |
+  fis,2. fis4 | fis2. fis4 |
+  fis2. fis4 | d2 e2 |
+
+  fis2. fis4 | fis2. fis4 |
+  fis2. fis4 | d2 e2 |
+
+  fis2. fis4 | fis2. fis4 |
+  fis2. fis4 | gis2 fis2 |
 }
 
 
@@ -136,13 +138,13 @@ b_epilogue = \relative c {
 
       \key fis \minor
 
-      \mark "First" \g_first
-      \mark "Chorus" \g_chorus
-      \mark "Second" \g_second
-      \mark "Chorus" \g_chorus
-      \mark "Third" \g_third
-      \mark "Chorus" \g_chorus
-      \mark "Epilogue" \g_epilogue
+      \mark "First" \g_first \bar "||"
+      \mark "Chorus" \g_chorus \bar "||"
+      \mark "Second" \g_second \bar "||"
+      \mark "Chorus" \g_chorus \bar "||"
+      \mark "Third" \g_third \bar "||"
+      \mark "Chorus" \g_chorus \bar "||"
+      \mark "Epilogue" \g_epilogue \bar "|."
     }
 
     {
@@ -165,6 +167,28 @@ b_epilogue = \relative c {
         \b_epilogue
       %% }
     }
+
+  {
+      \new Staff \with {
+        instrumentName = #"Warm Pad"
+        midiInstrument = #"pad 2 (warm)"
+      }
+      \key fis \minor
+      \clef treble
+
+      \relative c''' {
+        <<
+          { \repeat unfold 7 { <fis cis a>1~ | }
+            <fis cis a>1 | }
+          \\
+          { fis'1~ | fis |
+            e~ | e |
+            d~ | d |
+            cis~ | cis | }
+        >>
+      }
+  }
+
   >>
 
   \layout {}
