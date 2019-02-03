@@ -74,12 +74,12 @@ g_second = \relative fis {
 
 % good luck... :P
 b_second = \relative c {
-  fis1 | fis1 |
+  <cis fis>1 | fis,1 |
   \time 7/4
-  fis1.~ fis4 |
+  fis'1.~ fis4 |
   \time 4/4
-  fis1 | fis1 |
-  fis1 | fis1 |
+  <cis fis>1 | fis,1 |
+  <cis fis'>1 | fis,1 |
 
   fis1 | fis1 |
   fis1 | fis1 |
@@ -173,24 +173,31 @@ b_epilogue = \relative c {
     }
 
   {
-      \new Staff \with {
-        instrumentName = #"Warm Pad"
-        midiInstrument = #"pad 2 (warm)"
-      }
-      \key fis \minor
-      \clef treble
+    \new Staff \with {
+      midiMaximumVolume = #0.5
+      instrumentName = #"Strings"
+      midiInstrument = #"pad 2 (warm)"
+    }
+    \key fis \minor
+    \clef treble
 
-      \relative c''' {
-        <<
-          { \repeat unfold 7 { <fis cis a>1~ | }
-            <fis cis a>1 | }
-          \\
-          { fis'1~ | fis |
-            e~ | e |
-            d~ | d |
-            cis~ | cis | }
-        >>
-      }
+    \relative c''' {
+      <<
+        \ottava #1
+        { %% lower melody
+          <fis cis a>1~\ppp | <fis cis a>2.~ <fis cis a>4 |
+          \repeat unfold 3 {
+            <fis cis a>1~ | <fis cis a>2.~ <fis cis a>4 | }
+        }
+        \\
+        { %% higher melody
+          fis'1\<\ppp~ | fis\mf |
+          e\<\pp~ | e\mf |
+          d\<\pp~ | d\mf |
+          cis\<\pp~ | cis\mf |
+        }
+      >>
+    }
   }
 
   >>
